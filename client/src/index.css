@@ -19,8 +19,31 @@ code {
     font-size: 0.875rem;
     font-weight: 500;
     text-decoration: none;
+    line-height: 1.5;
+    
+}
+
+.link-mobile {
+    font-family: "Roboto";
+    color: white;
+    font-size: 0.875rem;
+    font-weight: 500;
+    text-decoration: none;
+    line-height: 1.5;
 }
 
 .actived {
   border-bottom: 2px solid white;
+}
+
+@media only screen and (min-width: 768px) {
+  .link-mobile {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .link {
+    display: none;
+  }
 }

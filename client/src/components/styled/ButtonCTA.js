@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import media from 'styled-media-query';
 
 const ButtonCTA = styled.button`
     border: 1px solid white;
@@ -9,6 +10,10 @@ const ButtonCTA = styled.button`
     font-family: Roboto;
     text-align: center;
     width: 10rem;
+
+    ${media.lessThan("medium")`
+        display: none;
+    `}
 `;
 
 export default ButtonCTA;

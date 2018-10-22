@@ -11,7 +11,7 @@ const About = () => {
         <div>
             <ContainerWithBackground>
                 <Navbar />
-                <div style={{ height: '800px', width: '100%' }} ></div>
+
             </ContainerWithBackground>
         </div>
     )

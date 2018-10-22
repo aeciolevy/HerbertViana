@@ -7,10 +7,11 @@ const ContainerWithBackground = styled.div`
     background-image: url(${bg});
     background-size: cover;
     padding: 23px 16%;
-    
+    height: 58rem;
 
     ${media.lessThan("small")`
         background-image: url(${bgMobile});
+        padding: 23px 5%;
     `}
 `;
 
