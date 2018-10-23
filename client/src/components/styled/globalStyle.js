@@ -1,6 +1,7 @@
-import { injectGlobal } from 'styled-components';
+import { generateMedia } from 'styled-media-query';
 
-injectGlobal` 
-
-`
-
+export const siteMedia = generateMedia({
+    desktop: '64em',
+    tablet: '48em',
+    mobile: '37.5em',
+});
