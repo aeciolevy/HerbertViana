@@ -3,8 +3,6 @@ import { siteMedia } from './globalStyle';
 import bg from '../../imgs/BG-8.png';
 import bgMobile from '../../imgs/bg-mobile-8.png';
 
-
-
 const ContainerWithBackground = styled.div`
     background-image: url(${bg});
     background-size: cover;
