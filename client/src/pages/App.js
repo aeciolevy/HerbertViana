@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Suspense, lazy, Component } from 'react';
 import Introduction from '../components/App/Introduction';
 import Async from 'react-code-splitting';
 
@@ -10,6 +10,8 @@ const PolygonBooks = (props) => <Async load={import(/* webpackChunkName: "Polygo
     '../components/styled/PolygonBooks')} componentProps={props} />;
 const MiddleEbook = (props) => <Async load={import(/* webpackChunkName: "MIddleEbook" */
     '../components/App/MiddleEbook')} componentProps={props} />;
+const BookSection = lazy(() => import(/* webpackChunkName: "BookSection"*/
+    '../components/App/BookSection'));
 
 class App extends Component {
     render() {
@@ -20,7 +22,11 @@ class App extends Component {
                     <Introduction />
                     <MiddleEbook />
                 </ContainerWithBackground>
-                <PolygonBooks />
+                <PolygonBooks>
+                    <Suspense fallback={<div> loading... </div>} >
+                        <BookSection />
+                    </Suspense>
+                </PolygonBooks>
             </>
         );
     }
