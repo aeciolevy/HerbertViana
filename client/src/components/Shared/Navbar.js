@@ -1,11 +1,10 @@
-import React from 'react';
-import Async from 'react-code-splitting';
+import React, {lazy} from 'react';
 import logo from '../../imgs/Logo.png';
 import ContainerLogo from '../styled/ContainerLogo';
 import LinkContainer from './LinkContainer';
 
-const DivFlex = props => <Async load={import( /* webpackChunkName: "DivFlex" */
-    '../styled/DivFlex')} componentProps={props} />
+const DivFlex = lazy(() => import( /* webpackChunkName: "DivFlex" */
+    '../styled/DivFlex'));
 
 const Navbar = () => {
     return(

@@ -1,15 +1,14 @@
 import React, { Suspense, lazy, Component } from 'react';
 import Introduction from '../components/App/Introduction';
-import Async from 'react-code-splitting';
 
-const ContainerWithBackground = (props) => <Async load={import( /* webpackChunkName: "MainContainer" */ 
-    '../components/styled/ContainerWithBackground')} componentProps={props} />;
-const Navbar = (props) => <Async load={import(/* webpackChunkName: "Navbar" */
-    '../components/Shared/Navbar')} componentProps={props} />;
-const PolygonBooks = (props) => <Async load={import(/* webpackChunkName: "PolygonBooks" */
-    '../components/styled/PolygonBooks')} componentProps={props} />;
-const MiddleEbook = (props) => <Async load={import(/* webpackChunkName: "MIddleEbook" */
-    '../components/App/MiddleEbook')} componentProps={props} />;
+const ContainerWithBackground = lazy(() => import( /* webpackChunkName: "BackgroundContainer" */
+    '../components/styled/ContainerWithBackground'));
+const Navbar = lazy(() => import(/* webpackChunkName: "Navbar" */
+    '../components/Shared/Navbar'));
+const PolygonBooks = lazy(() => import(/* webpackChunkName: "PolygonBooks" */
+    '../components/styled/PolygonBooks'));
+const MiddleEbook = lazy(() => import(/* webpackChunkName: "MIddleEbook" */
+    '../components/App/MiddleEbook'));
 const BookSection = lazy(() => import(/* webpackChunkName: "BookSection"*/
     '../components/App/BookSection'));
 
@@ -17,16 +16,16 @@ class App extends Component {
     render() {
         return (
             <>
-                <ContainerWithBackground>
-                    <Navbar />
-                    <Introduction />
-                    <MiddleEbook />
-                </ContainerWithBackground>
-                <PolygonBooks>
-                    <Suspense fallback={<div> loading... </div>} >
+                <Suspense fallback={<div> loadingNewpage... </div>} >
+                    <ContainerWithBackground>
+                        <Navbar />
+                        <Introduction />
+                        <MiddleEbook />
+                    </ContainerWithBackground>
+                    <PolygonBooks>
                         <BookSection />
-                    </Suspense>
-                </PolygonBooks>
+                    </PolygonBooks>
+                </Suspense>
             </>
         );
     }
