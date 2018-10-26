@@ -1,6 +1,9 @@
-import React from 'react';
+import React, { lazy } from 'react';
 import DivFlex from '../styled/DivFlex';
 import colors from '../styled/colors';
+
+const BookItem = lazy(() => import(/* webpackChunkName: "BookItems" */
+    './BookItem'));
 
 const BookSection = React.memo(function BookSection(props) {
 
@@ -10,6 +13,7 @@ const BookSection = React.memo(function BookSection(props) {
                 <h3 style={{ fontFamily: 'Roboto', textAlign: 'center', color: `${colors.textTitle}`, fontSize: '1.875rem' }}> 
                     Livros 
                 </h3>
+                <BookItem />
             </div>
         </DivFlex>
     );
