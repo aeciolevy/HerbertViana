@@ -4,6 +4,7 @@ import { siteMedia } from './globalStyle';
 const PolygonBooks = styled.div`
     margin-top: 18rem;
     padding-top: 20rem;
+    padding-bottom: 6.25rem;
     background-color: #FAFAFA;
     width: 100vw;
     min-height: 50rem;

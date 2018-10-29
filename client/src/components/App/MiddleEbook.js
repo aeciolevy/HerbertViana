@@ -23,18 +23,11 @@ const MiddleEbook = () => {
                         Baixe seu E-Book
                     </Button>
                     <div style={{ width: "28.125rem", zIndex: 2}}>
-                        <p style={{ lineHeight: '1.6875rem', color: `${color.textNormal}`}}>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                            Vivamus rutrum a diam vel porttitor. 
-                            Nullam eu urna nisl. 
-                            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia 
-                            Curae; 
-                            Mauris vel felis et diam vestibulum fermentum id et augue. 
-                            Massa ornare risus mattis rhoncus. 
-                            Quisque pretium vulputate eros, a mollis enim maximus at. 
-                            Nam placerat sollicitudin lobortis. 
-                            Sed eros erat, varius a convallis non, porttitor eget turpis. 
-                            Suspendisse et ligula pellentesque, accumsan orci ut, egestas enim. Vivamus scelerisque odio a nulla ornare venenatis.
+                        <p style={{ lineHeight: '2rem', color: `${color.textNormal}`}}>
+                            Neste e-book, o professor Herbert Viana, 
+                            apresenta um resumo  do sistema de gestão CIT/CSM, 
+                            para administração da Função Manutenção, 
+                            apresentando ao leitor os seis processos que o formam.
                         </p>
                     </div>
                     

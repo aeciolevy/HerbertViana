@@ -2,13 +2,18 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import * as route from './routes';
+import * as serviceWorker from './serviceWorker';
 // Fonts and CSS
 import "typeface-roboto";
 import "typeface-montserrat";
 import './index.css';
 import 'normalize.css';
+// Icons
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fab, faFacebook, faFacebookF, faInstagram, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
+import { far, faCircle, faSquare, faCheckCircle  } from '@fortawesome/free-regular-svg-icons';
+library.add(fab, far, faFacebook, faFacebookF, faSquare, faCheckCircle, faInstagram, faLinkedinIn, faCircle);
 
-import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
     <BrowserRouter>

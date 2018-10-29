@@ -9,6 +9,7 @@ const DivFlex = styled.div`
     align-content: ${({ alignContent }) => alignContent ? alignContent : 'unset'};
     height: ${({ height }) => height ? height : 'auto'};
     width: ${({ width }) => width ? width : 'auto' };
+    margin: ${({ margin }) => margin ? margin : 'auto' };
 `
 
 export default DivFlex;
