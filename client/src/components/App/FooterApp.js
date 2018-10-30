@@ -4,10 +4,15 @@ import DivFlex from '../styled/DivFlex';
 import ContainerLogo from '../styled/ContainerLogo';
 import logo from '../../imgs/Logo.png';
 import SocialIcons from '../Shared/SocialIcons';
+import Divider from '../styled/Divider';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import LinkIcon from '../Shared/LinkIcon';
+import { SmallText } from '../styled/Typography';
+
 
 const FooterApp = () => {
     return(
-        <Footer margin="0" padding="2.5rem 13.45rem 3rem 13.45rem">
+        <Footer margin="0" padding="2.5rem 12.45rem 3rem 12.45rem">
             <DivFlex flow="column">
                 <DivFlex flow="row" width="100%">
                     <ContainerLogo bg={logo} />
@@ -19,6 +24,18 @@ const FooterApp = () => {
                         <SocialIcons />
                     </DivFlex>
                 </DivFlex>  
+                <Divider />
+                <DivFlex flow="row" justify="center">
+                    <SmallText> 
+                    Made with 
+                    </SmallText>
+                    <LinkIcon href="https://www.linkedin.com/in/aeciolevy/">
+                        <FontAwesomeIcon icon={['far', 'heart']} color="white" />
+                    </LinkIcon>
+                    <SmallText> 
+                    in Vancouver.
+                    </SmallText>
+                </DivFlex>
             </DivFlex>
         </Footer>
     );
