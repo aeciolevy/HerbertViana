@@ -22,3 +22,10 @@ export const BookDescription = styled.p`
     color: ${colors.textNormal};
 `;
 
+export const SmallText = styled.p`
+    color: white;
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: small;
+    margin: ${( { margin }) => margin ? margin : '0'};
+    padding: ${({ padding }) => padding ? padding: '0 0.3rem'};
+`;

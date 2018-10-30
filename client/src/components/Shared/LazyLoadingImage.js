@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { SimpleImg, SimpleImgProvider } from 'react-simple-img';
 
 const LazyLoadingImage = React.memo(function LazyLoadingImage(props){
-    const { threshold, img, imgPlaceHolder, duration, height, width } = props;
+    const { threshold, img, imgPlaceHolder, duration, height, width, } = props;
     return (
         <SimpleImgProvider
             config={{ threshold: [threshold || 0.5] }}

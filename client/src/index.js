@@ -8,20 +8,23 @@ import "typeface-roboto";
 import "typeface-montserrat";
 import './index.css';
 import 'normalize.css';
+// Modals
+import { ModalProvider } from './components/Shared/Modal/ModalContext';
+import ModalRoot from './components/Shared/Modal/ModalRoot';
 // Icons
-import { library } from '@fortawesome/fontawesome-svg-core';
-import { fab, faFacebook, faFacebookF, faInstagram, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
-import { far, faCircle, faSquare, faCheckCircle  } from '@fortawesome/free-regular-svg-icons';
-library.add(fab, far, faFacebook, faFacebookF, faSquare, faCheckCircle, faInstagram, faLinkedinIn, faCircle);
-
+import SetupIcon from './SetupIcons';
+SetupIcon.init();
 
 ReactDOM.render(
-    <BrowserRouter>
-        <Switch>
-            <Route exact path="/" component={route.App} />
-            <Route exact path="/aboutme" component={route.About} />
-        </Switch>
-    </BrowserRouter>,
+    <ModalProvider>
+        <ModalRoot />
+        <BrowserRouter>
+            <Switch>
+                <Route exact path="/" component={route.App} />
+                <Route exact path="/aboutme" component={route.About} />
+            </Switch>
+        </BrowserRouter>
+    </ModalProvider>,
     document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
