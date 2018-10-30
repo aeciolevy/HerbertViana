@@ -1,7 +1,6 @@
 import React, { Suspense, lazy, Component } from 'react';
 import Introduction from '../components/App/Introduction';
 
-
 const ContainerWithBackground = lazy(() => import( /* webpackChunkName: "BackgroundContainer" */
     '../components/styled/ContainerWithBackground'));
 const Navbar = lazy(() => import(/* webpackChunkName: "Navbar" */
