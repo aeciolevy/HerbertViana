@@ -32,7 +32,7 @@ export default {
     // orange shades
     lightOrange: '#FF9E7C',
     orange: '#F17423',
-    darkOrange: '#FF5216',
+    darkOrange: '#d65c0a',
     // green shades
     lightGreen: '#15e0f2',
     green: '#13A5B2',

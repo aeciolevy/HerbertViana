@@ -8,8 +8,9 @@ const DivFlex = styled.div`
     align-items: ${({ alignItems }) => alignItems ? alignItems : 'unset'};
     align-content: ${({ alignContent }) => alignContent ? alignContent : 'unset'};
     height: ${({ height }) => height ? height : 'auto'};
-    width: ${({ width }) => width ? width : 'auto' };
-    margin: ${({ margin }) => margin ? margin : 'auto' };
-`
+    width: ${({ width }) => width ? width : 'unset' };
+    margin: ${({ margin }) => margin ? margin : 'unset' };
+    padding: ${({ padding }) => padding ? padding : '0' };
+`;
 
 export default DivFlex;

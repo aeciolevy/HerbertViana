@@ -20,9 +20,9 @@ Modal.defaultStyles.overlay.backgroundColor = 'rgba(47, 47, 47, 0.50)';
 Modal.defaultStyles.overlay.zIndex = '100';
 Modal.setAppElement("#root");
 
-const ReactModal = ({ children, title, isOpen, onClose }) => {
+const ReactModal = ({ children, style, title, isOpen, onClose }) => {
     return (
-        <Modal isOpen={isOpen} style={customStyles} onRequestClose={onClose}
+        <Modal isOpen={isOpen} style={{...customStyles, ...style}} onRequestClose={onClose}
         >
             {children}
         </Modal>
