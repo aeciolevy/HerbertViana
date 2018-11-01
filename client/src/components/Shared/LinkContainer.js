@@ -5,6 +5,7 @@ import ButtonCTA from '../styled/ButtonCTA';
 import { LinkTextMobile } from './LinkTextMobile';
 import { ModalConsumer } from '../Shared/Modal/ModalContext';
 import ModalEbook from './Modal/ModalEbook';
+import ModalContact from './Modal/ModalContact';
 
 const LinkContainer = (props) => {  
     return (
@@ -17,7 +18,11 @@ const LinkContainer = (props) => {
                         <p style={{margin: 0}} className="link" 
                             onClick={() => showModal( ModalEbook )}> 
                         E-book </p>
-                        <ButtonCTA> Entre em contato</ButtonCTA>
+                        <ButtonCTA
+                            onClick={() => showModal( ModalContact )}
+                        > 
+                            Entre em contato
+                        </ButtonCTA>
                     </>
                 )}
             </ModalConsumer>

@@ -12,7 +12,7 @@ const ButtonCTA = styled.button`
     text-align: center;
     width: 10rem;
 
-    &:hover {
+    &:hover, &:focus {
         transition: all 0.5;
         color: rgb(226, 226, 226);
         border: 1px solid rgb(226, 226, 226);

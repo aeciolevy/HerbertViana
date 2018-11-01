@@ -1,0 +1,20 @@
+{
+  "name": "herbertviana",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "cd client && npm start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aeciolevy/HerbertViana.git"
+  },
+  "author": "Aécio Levy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aeciolevy/HerbertViana/issues"
+  },
+  "homepage": "https://github.com/aeciolevy/HerbertViana#readme"
+}

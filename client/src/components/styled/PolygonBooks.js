@@ -9,10 +9,10 @@ const PolygonBooks = styled.div`
     width: 100vw;
     min-height: 50rem;
     -webkit-clip-path: polygon(0 22%, 100% 0%, 100% 100%, 0% 100%);
-    clip-path: polygon(0 30%, 100% 0%, 100% 100%, 0% 100%);
+    clip-path: polygon(0% 30%, 100% 0%, 100% 100%, 0% 100%);
 
     ${siteMedia.greaterThan("desktop")`
-        clip-path: polygon(0 25%, 100% 0%, 100% 100%, 0% 100%);
+        clip-path: polygon(0 18%, 100% 0%, 100% 100%, 0% 100%);
     `}
 `;
 
