@@ -4,6 +4,7 @@ import ReactModal from './ReactModal';
 import Image from '../../styled/Image';
 import logo from '../../../imgs/Logo2.png';
 import EbookInput from './EbookInput';
+import ContactInput from './ContactInput';
 
 const ModalContact = ({ onClose }) => {
     return (
@@ -15,12 +16,19 @@ const ModalContact = ({ onClose }) => {
                         style={{ width: '11rem', height: '7rem', alignSelf: 'center', marginLeft: 'auto' }} />
                 </DivFlex>
                 <DivFlex width="90%" padding="0 2rem">
-                    <input type="textarea" style={{width: '100%'}}
-                        placeholder="Escreva algo para mim"
+                    <textarea type="textarea" style={{width: '100%'}}
+                        placeholder="Escreva algo para mim" rows="3" cols="33"
+                        style={{
+                            border: '0.5px solid orange',
+                            minWidth: '20rem',
+                            minHeight: '6.25rem',
+                            width: '100%',
+                            fontSize: '0.75rem',
+                        }}
                     />
                 </DivFlex>
-                <DivFlex width="100%" padding="4rem 2rem">
-                    <EbookInput />
+                <DivFlex width="100%" padding="2rem 2rem">
+                    <ContactInput />
                 </DivFlex>
             </DivFlex>
         </ReactModal>
