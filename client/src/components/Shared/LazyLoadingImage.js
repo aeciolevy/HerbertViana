@@ -11,7 +11,7 @@ const LazyLoadingImage = React.memo(function LazyLoadingImage(props){
             <SimpleImg
                 height={height || '100%'}
                 width={width || 500}
-                animationDuration={duration || 1}
+                animationDuration={duration || 0.5}
                 placeholder={imgPlaceHolder}
                 src={img}
             />
@@ -20,9 +20,9 @@ const LazyLoadingImage = React.memo(function LazyLoadingImage(props){
 });
 
 LazyLoadingImage.propTypes = {
-    // image to be loaded
+    /** image to be loaded */
     img: PropTypes.string.isRequired,
-    // placeholder image to be loaded first
+    /** placeholder image to be loaded first */
     imgPlaceHolder: PropTypes.string.isRequired,
 };
 

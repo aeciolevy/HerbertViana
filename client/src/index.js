@@ -1,7 +1,6 @@
-import React from 'react';
+import React, { Suspense, lazy } from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
-import * as route from './routes';
 import * as serviceWorker from './serviceWorker';
 // Fonts and CSS
 import "typeface-roboto";
@@ -15,15 +14,22 @@ import ModalRoot from './components/Shared/Modal/ModalRoot';
 import SetupIcon from './SetupIcons';
 SetupIcon.init();
 
+// Code Split
+
+const App = lazy(() => import(/* webpackChunkName: "App" */ './pages/App'));
+const About = lazy(() => import( /* webpackChunkName: "AboutPage" */'./pages/About'));
+
 ReactDOM.render(
     <ModalProvider>
         <ModalRoot />
-        <BrowserRouter>
-            <Switch>
-                <Route exact path="/" component={route.App} />
-                <Route exact path="/aboutme" component={route.About} />
-            </Switch>
-        </BrowserRouter>
+        <Suspense fallback={<div> Carregando... </div>}>
+            <BrowserRouter>
+                <Switch>
+                    <Route exact path="/" component={ props => <App {...props} />} />
+                    <Route exact path="/aboutme" component={props => <About {...props}/> } />
+                </Switch>
+            </BrowserRouter>
+        </Suspense>
     </ModalProvider>,
     document.getElementById('root'));
 

@@ -2,7 +2,6 @@ import React from 'react';
 import Button from '../../styled/Button';
 import Input from '../../styled/Input';
 import DivFlex from '../../styled/DivFlex';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const ContactInput = () => (
     <DivFlex flow="row"  width="90%">

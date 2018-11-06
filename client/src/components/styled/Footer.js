@@ -7,7 +7,7 @@ const Footer = styled.footer`
     width: ${( {width} ) => width ? width : 'unset'};
     margin: ${( {margin} ) => margin ? margin : '0'};
     padding: ${( {padding} ) => padding ? padding : '0'};
-    position: relative;
+    position: ${({ position }) => position ? position : 'relative'};;
     bottom: 0;
 `;
 
