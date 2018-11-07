@@ -2,6 +2,7 @@ import React, { lazy } from 'react';
 import DivFlex from '../components/styled/DivFlex';
 import Footer from '../components/styled/Footer';
 import MainContent from '../components/About/MainContent';
+import UniversityIcons from '../components/About/UniversityIcons';
 
 const ContainerWithBackground = lazy(() => import( /* webpackChunkName: "MainContainer" */
     '../components/styled/ContainerWithBackground'));
@@ -11,14 +12,18 @@ const Navbar = lazy(() => import(/* webpackChunkName: "Navbar" */
 const About = () => {
     return(
         <div>
-            <ContainerWithBackground>
+            <ContainerWithBackground height="40vh">
                 <Navbar />
             </ContainerWithBackground>
-            <DivFlex width="100%" height="68vh" 
+            <DivFlex width="100vw" height="68vh" flow="column"
                 style={{ position: 'absolute', top: '9.25rem', backgroundColor: 'white' }}> 
                 <MainContent />
+                <DivFlex flow="row" >
+                    <DivFlex></DivFlex>
+                    <UniversityIcons />
+                </DivFlex>
             </DivFlex>
-            <Footer position="sticky" height="8.25rem">
+            <Footer position="fixed" width="100%" height="8.25rem">
 
             </Footer>
         </div>

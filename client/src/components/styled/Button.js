@@ -15,7 +15,7 @@ const Button = styled.button`
   line-height: ${ ({ lineHeight }) => lineHeight ? lineHeight : "40px"};
   margin: 8px 1rem;
   outline: none;
-  padding: 0 1rem;
+  padding: ${ ({ padding }) => padding ? padding : "0 1rem"};;
   transition: all 300ms ease;
   width: ${ ({ width }) => width ? width : "unset"};
   &:hover {
