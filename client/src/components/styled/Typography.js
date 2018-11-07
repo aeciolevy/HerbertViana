@@ -1,10 +1,6 @@
 import styled from 'styled-components';
 import colors from '../styled/colors';
 
-const Typography = styled.div`
-    
-`;
-
 export const H3Title = styled.h3`
     font-family: Roboto;
     font-size: 1.125rem;
@@ -15,7 +11,7 @@ export const H3Title = styled.h3`
 `;
 
 export const BookDescription = styled.p`
-    max-width: 18.75rem;
+    max-width: ${ ({ maxWidth }) => maxWidth ? maxWidth : '18.75rem'};
     line-height: 1.6875rem;
     font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 0.875rem;

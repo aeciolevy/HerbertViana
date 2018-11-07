@@ -7,7 +7,7 @@ const ContainerWithBackground = styled.div`
     background-image: url(${bg});
     background-size: cover;
     padding: 23px 16%;
-    height: 58rem;
+    height: ${ ({ height }) => height ? height : '58rem'};
     flex: 1;
 
     ${siteMedia.lessThan("mobile")`
