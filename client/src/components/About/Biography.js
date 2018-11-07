@@ -3,7 +3,7 @@ import { BookDescription } from '../styled/Typography';
 
 const Biography = () => {
     return (
-        <BookDescription maxWidth="39.75rem">
+        <BookDescription maxWidth="49.75rem">
             Graduado em Engenharia Mecânica pela UFCG (1997), 
             em Direito pela UEPB (1998), mestrado em Engenharia Mecânica pela UFPB (2008), 
             Doutorado em Engenharia de Produção pela UFRGS (2013), 

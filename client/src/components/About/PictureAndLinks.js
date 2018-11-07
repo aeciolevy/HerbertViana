@@ -12,10 +12,10 @@ const PictureAndLinks = React.memo(function PictureAndLinks() {
         <>
             <LazyLoadingImage img={profile} imgPlaceHolder={profilePlaceholder} width="200" />
             <LinkIcon href="https://www.linkedin.com/in/herbert-viana-a248936a/">
-                <ButtonBg imgSource={linkedin} style={{ marginTop: '2rem' }} />
+                <ButtonBg imgSource={linkedin}  />
             </LinkIcon>
             <LinkIcon href="http://buscatextual.cnpq.br/buscatextual/visualizacv.do?metodo=apresentar&id=K4294128Z4">
-                <ButtonBg imgSource={lattes} style={{ marginTop: '2rem'}}/>
+                <ButtonBg imgSource={lattes} />
             </LinkIcon>
         </>
     );

@@ -5,11 +5,11 @@ import Biography from './Biography';
 
 const MainContent = React.memo(function MainContent() {
     return(
-        <DivFlex flow="row" width="100%" padding="2rem 8rem 0 8rem">
+        <DivFlex flow="row" width="100%" padding="2rem 0rem">
             <DivFlex flow="column" alignItems="center"width="30%">
                 <PictureAndLinks />
             </DivFlex>
-            <DivFlex flex="1">
+            <DivFlex>
                 <Biography />
             </DivFlex>
         </DivFlex>
