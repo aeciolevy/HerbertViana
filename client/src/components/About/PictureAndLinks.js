@@ -10,7 +10,7 @@ import LinkIcon from '../Shared/LinkIcon';
 const PictureAndLinks = React.memo(function PictureAndLinks() {
     return(
         <>
-            <LazyLoadingImage img={profile} imgPlaceHolder={profilePlaceholder} width="200" />
+            <LazyLoadingImage img={profile} imgPlaceHolder={profile} width="200"  />
             <LinkIcon href="https://www.linkedin.com/in/herbert-viana-a248936a/">
                 <ButtonBg imgSource={linkedin}  />
             </LinkIcon>

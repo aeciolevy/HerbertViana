@@ -18,12 +18,11 @@ const About = () => {
             <DivFlex width="100vw" height="68vh" flow="column"
                 style={{ position: 'absolute', top: '9.25rem', backgroundColor: 'white' }}> 
                 <MainContent />
-                <DivFlex flow="row" >
-                    <DivFlex></DivFlex>
+                <DivFlex flow="row" justify="center" style={{ maxHeight: '12rem'}}>
                     <UniversityIcons />
                 </DivFlex>
             </DivFlex>
-            <Footer position="fixed" width="100%" height="8.25rem">
+            <Footer position="fixed" width="100%" height="5.25rem">
 
             </Footer>
         </div>
