@@ -1,7 +1,7 @@
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab, faFacebook, faFacebookF, faInstagram, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
-import { far, faCircle, faSquare, faCheckCircle, faHeart, faFilePdf } from '@fortawesome/free-regular-svg-icons';
-import { fas, faFileDownload } from '@fortawesome/free-solid-svg-icons';
+import { far, faCircle, faSquare, faCheckCircle,  faFilePdf } from '@fortawesome/free-regular-svg-icons';
+import { fas, faFileDownload, faHeart } from '@fortawesome/free-solid-svg-icons';
 
 const iconConfig = {
     init: function init() {

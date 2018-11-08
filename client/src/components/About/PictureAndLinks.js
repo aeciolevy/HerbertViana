@@ -1,20 +1,21 @@
 import React from 'react';
 import LazyLoadingImage from '../Shared/LazyLoadingImage';
 import profile from '../../imgs/profile_mobile.svg';
-import profilePlaceholder from '../../imgs/profile-laceholder-8.png';
 import ButtonBg from '../styled/ButtonBg';
 import linkedin from '../../imgs/bt_linkedin.png';
 import lattes from '../../imgs/bt_lattes.png';
 import LinkIcon from '../Shared/LinkIcon';
+import { newWindow } from '../../utils/newWindow';
+import { SOCIAL_LINKS } from '../../utils/constants';
 
 const PictureAndLinks = React.memo(function PictureAndLinks() {
     return(
         <>
             <LazyLoadingImage img={profile} imgPlaceHolder={profile} width="200"  />
-            <LinkIcon href="https://www.linkedin.com/in/herbert-viana-a248936a/">
+            <LinkIcon onClick={() => newWindow (SOCIAL_LINKS.LINKEDIN)}>
                 <ButtonBg imgSource={linkedin}  />
             </LinkIcon>
-            <LinkIcon href="http://buscatextual.cnpq.br/buscatextual/visualizacv.do?metodo=apresentar&id=K4294128Z4">
+            <LinkIcon onClick={() => newWindow(SOCIAL_LINKS.LATTES)}>
                 <ButtonBg imgSource={lattes} />
             </LinkIcon>
         </>
