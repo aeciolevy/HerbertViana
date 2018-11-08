@@ -8,6 +8,7 @@ import Divider from '../styled/Divider';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import LinkIcon from '../Shared/LinkIcon';
 import { SmallText } from '../styled/Typography';
+import MadeWith from '../Shared/MadeWith';
 
 
 const FooterApp = () => {
@@ -25,17 +26,7 @@ const FooterApp = () => {
                     </DivFlex>
                 </DivFlex>  
                 <Divider />
-                <DivFlex flow="row" justify="center">
-                    <SmallText> 
-                    Made with 
-                    </SmallText>
-                    <LinkIcon href="https://www.linkedin.com/in/aeciolevy/">
-                        <FontAwesomeIcon icon={['far', 'heart']} color="white" />
-                    </LinkIcon>
-                    <SmallText> 
-                    in Vancouver.
-                    </SmallText>
-                </DivFlex>
+                <MadeWith />
             </DivFlex>
         </Footer>
     );
