@@ -1,0 +1,30 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "server to route data ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/aeciolevy/HerbertViana.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aeciolevy/HerbertViana/issues"
+  },
+  "homepage": "https://github.com/aeciolevy/HerbertViana#readme",
+  "dependencies": {
+    "dotenv": "6.1.0",
+    "fastify": "1.13.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.8.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-config-airbnb-standard": "^2.1.6",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-jsx-import": "0.0.1"
+  }
+}
