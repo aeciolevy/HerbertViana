@@ -4,7 +4,8 @@
   "description": "server to route data ",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js"
   },
   "repository": {
     "type": "git",
@@ -25,6 +26,7 @@
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-config-airbnb-standard": "^2.1.6",
     "eslint-plugin-jsx-a11y": "^6.1.2",
-    "eslint-plugin-jsx-import": "0.0.1"
+    "eslint-plugin-jsx-import": "0.0.1",
+    "nodemon": "^1.18.6"
   }
 }

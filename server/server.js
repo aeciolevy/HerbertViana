@@ -3,6 +3,7 @@ const fastify = require('fastify')({
     logger: true,
 });
 
+const route = require('./routes');
 
 class Server {
     constructor(PORT) {
@@ -11,16 +12,9 @@ class Server {
     
     async start() {
         try {
-            
-            fastify.get('/', async (req, res) => {
-                return { hello: 'world' };
-            });
+            fastify.register(route); 
 
             await fastify.listen(this.port, '0.0.0.0', (err, address) => {
-                if (err) {
-                    fastify.log.error(err);
-                    process.exit(1);
-                }
                 fastify.log.info(`server listening on ${address}`);
             })
         } catch (err) {

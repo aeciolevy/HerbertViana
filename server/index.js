@@ -6,5 +6,8 @@ const PORT = process.env.PORT || 8181;
 
 const Server = require('./server');
 const server = new Server(PORT);
-
-server.start();
+try {
+    server.start();
+} catch (err) {
+    console.log(err)
+}
