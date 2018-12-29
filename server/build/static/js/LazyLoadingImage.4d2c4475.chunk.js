@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[11],{48:function(e,i,t){"use strict";t.r(i);var n=t(0),r=t.n(n),a=t(64),o=r.a.memo(function(e){var i=e.threshold,t=e.img,n=e.imgPlaceHolder,o=e.duration,h=e.height,c=e.width;return r.a.createElement(a.SimpleImgProvider,{config:{threshold:[i||.5]}},r.a.createElement(a.SimpleImg,{height:h||"100%",width:c||500,animationDuration:o||1,placeholder:n,src:t}))});i.default=o}}]);
+//# sourceMappingURL=LazyLoadingImage.4d2c4475.chunk.js.map
