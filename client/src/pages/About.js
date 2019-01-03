@@ -17,7 +17,7 @@ const About = () => {
                 <Navbar />
             </ContainerWithBackground>
             <DivFlex width="100vw" height="68vh" flow="column"
-                style={{ position: 'absolute', top: '9.25rem', backgroundColor: 'white' }}> 
+                style={{ position: 'absolute', top: '9.25rem', backgroundColor: 'white' }}>
                 <MainContent />
                 <DivFlex flow="row" justify="center" style={{ maxHeight: '12rem'}}>
                     <UniversityIcons />
